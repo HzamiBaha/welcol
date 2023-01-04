@@ -1,0 +1,233 @@
+.hero {
+    display: flex;
+    width: 100%;
+    margin-top: 96px;
+    height: 720px;
+    background: #091010;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+
+    width: 90%;
+    margin: auto;
+    max-width: 1320px;
+}
+
+.hero-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 136px;
+    width: 50%;
+    max-width: 529px;
+    height: 556px;
+}
+
+.hero-cta-title {
+
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.hero-cta-des {
+    height: 48px;
+    text-align: left;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16.8px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.hero-cta__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+
+
+    height: 368px;
+}
+
+.hero-cta__bait {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 26px;
+
+    width: 302px;
+    height: 52px;
+}
+
+.hero-cta__bait-messsage {
+    color: #FFFFFF;
+}
+
+.hero-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    width: 50%;
+    max-width: fit-content;
+    height: 570px;
+}
+
+.button__secondary {
+    width: 199px;
+    height: 56px;
+
+    border: 2px solid #FF8200;
+    border-radius: 5px;
+    background-color: #091010;
+
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20.16px;
+    line-height: 26px;
+
+    text-align: center;
+
+    padding: 7px 10px;
+    color: #FFFFFF;
+}
+
+.button__primary {
+    width: 199px;
+    height: 56px;
+
+    border: 2px solid #FF8200;
+    border-radius: 5px;
+    background-color: #FF8200;
+
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20.16px;
+    line-height: 26px;
+
+    text-align: center;
+
+    padding: 7px 10px;
+    color: #FFFFFF;
+}
+
+.hero-cta__buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+}
+
+.hero__img2 {
+    width: 100%;
+    height: auto;
+}
+
+/* ============== BREAKPOINTS ==============*/
+/* large devices */
+@media screen and (max-width: 1440px) {
+
+    .hero__img2 {
+        display: none;
+    }
+}
+
+/* medium devices */
+@media screen and (max-width: 990px) {
+    .hero-cta {
+        width: 40%;
+        max-width: fit-content;
+        height: 556px;
+        gap: 50px;
+    }
+
+    .hero-cta-title {
+
+        width: 100%;
+    }
+
+    .hero {
+        height: 600px;
+    }
+
+    .hero__img1 {
+        width: 308px;
+    }
+
+    .hero-images {
+        align-items: center;
+    }
+
+    .hero__img {
+        width: 140px;
+    }
+
+    .hero-cta__bait-messsage {
+        width: 70px;
+        text-align: left;
+    }
+
+    .button__primary,
+    .button__secondary {
+        width: 140px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+}
+
+/* small devices */
+@media screen and (max-width: 728px) {
+    .hero__img1 {
+        display: none;
+    }
+
+    .hero__img2 {
+        display: block;
+        width: 200px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .hero__img2 {
+        display: none;
+    }
+
+    .hero-cta {
+        min-width: 304px;
+        margin: auto;
+        height: 100%;
+        gap: 50px;
+    }
+
+    .hero {
+        height: 544px;
+    }
+
+    .hero-content {
+        height: 95%;
+    }
+
+}
